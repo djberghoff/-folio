@@ -1,7 +1,7 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
+title: about
+permalink: /about/
 ---
 
 <div class="header-bar">
