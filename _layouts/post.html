@@ -10,10 +10,12 @@ layout: default
 	    {{ page.description }}
 	{% endif %}
     </div>-->
-    <div class="post-date">
+    <div class="post-author">
     	{% if page.author %}
-	    {{page.author}} TEST |
-    	{% endif %}    	
+	    {{page.author}} |
+    	{% endif %}
+    </div>
+    <div class="post-date">
 	    {% if page.date %}
 	    {{page.date | date:"%B %Y"}}
     	{% endif %}   
