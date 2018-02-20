@@ -164,6 +164,14 @@ font-size: $small-font-size;
 color: $grey-color;
 margin-bottom: 0px; 
 }
+.post-subtitle {
+    font-size: small;
+    color: $grey-color;    
+.post-date {
+    font-size: x-small;
+    font-style: italic;
+    color: $grey-color;
+}
 .post-link {
 display: block;
 font-size: 42px;
