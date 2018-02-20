@@ -8,10 +8,12 @@ layout: default
     <p class="post-meta">
 	{% if page.description %}
 	    {{ page.description }}
-	{% endif %}	    
+	{% endif %}
+	    <br>
     	{% if page.date %}
 	    {{page.date | date:"%B %Y"}}
     	{% endif %}
+	    <br>
         {% if page.author %}
 	    {{ page.author }}
 	{% endif %}
