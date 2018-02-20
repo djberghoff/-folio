@@ -11,12 +11,12 @@ layout: default
 	{% endif %}
     </div>-->
     <div class="post-date">
-    	{% if page.date %}
-	    {{page.date | date:"%B %Y"}}
-    	{% endif %}
     	{% if page.author %}
-	    {{page.author}}
-    	{% endif %}	    
+	    {{page.author}} TEST |
+    	{% endif %}    	
+	    {% if page.date %}
+	    {{page.date | date:"%B %Y"}}
+    	{% endif %}   
     </div>
   </header>
 	
