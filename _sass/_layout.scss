@@ -165,8 +165,9 @@ font-size: $small-font-size;
 color: $grey-color;
 margin-bottom: 0px; 
 }
-.post-subtitle {
-    font-size: 20;
+.post-author {
+    font-size: 12;
+    font-style: italic;
     color: $green;
 }
 .post-date {
