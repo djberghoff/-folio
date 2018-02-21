@@ -205,6 +205,7 @@ pre {
     max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
     margin-right: 10%;//auto;
     margin-left: 10%;//auto;
+    width:50%;
     padding-right: $horizontal-spacing-unit;
     padding-left: $horizontal-spacing-unit;
     @extend %clearfix;
