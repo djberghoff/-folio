@@ -1,0 +1,44 @@
+---
+layout: post
+title: a post with code
+date: 2015-07-15 15:09:00
+description: an example of a blog post with some code
+---
+This theme implements a built-in Jekyll feature, the use of Pygments, for sytanx highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in a liquid tag: 
+{% raw  %}
+{% highlight c++ %}  <br/> code code code <br/> {% endhighlight %}{% endraw %}
+
+Produces something like this: 
+
+{% highlight python %}
+
+from bs4 import BeautifulSoup as bs
+import requests
+import csv
+
+page = requests.get("http://www.mlb.com/team")
+soup = bs(page.content, 'html.parser')
+
+#American League
+allist = []
+for ultag in soup.find_all('ul', {'class': 'al team'}):
+	list1 = []	
+	for litag in ultag.find_all('li'):
+		list1.append(litag.text)
+	allist.append(list1)
+
+#National League
+nllist = []
+for ultag in soup.find_all('ul', {'class': 'nl team'}):
+	list1 = []	
+	for litag in ultag.find_all('li'):
+		list1.append(litag.text)
+	nllist.append(list1)
+
+with open("address2.csv", "wb") as f:
+	writer = csv.writer(f)
+	writer.writerows(allist)
+	writer.writerows(nllist)
+
+
+{% endhighlight %}
