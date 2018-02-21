@@ -5,6 +5,7 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     //margin: 0;
+    background-image: url("img/bg.gif");
     padding: 0;
 }
 
@@ -55,8 +56,7 @@ body {
     font-weight: 100;
     color: $text-color;
     background-color: $green;//$background-color;
-    margin-left:10%;
-    margin-right:10%;
+    width:700px;
     -webkit-text-size-adjust: 100%;
 }
 
