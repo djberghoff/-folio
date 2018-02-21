@@ -4,9 +4,8 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-    //margin: 0;
-    background-image: url("/img/bg.gif");
-    //padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -49,15 +48,12 @@ $theme-color: $wine;
 /**
  * Basic styling
  */
-body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 100;
     color: $text-color;
     background-color: #fff;//$background-color;
-    width:50%;
-    padding: 10px;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -201,11 +197,10 @@ pre {
  */ 
 
 .wrapper {
-   // max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-   // max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
-    margin-right: 10%;//auto;
-    margin-left: 10%;//auto;
-    width:50%;
+    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
     padding-right: $horizontal-spacing-unit;
     padding-left: $horizontal-spacing-unit;
     @extend %clearfix;
