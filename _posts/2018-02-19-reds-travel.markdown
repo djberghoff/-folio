@@ -14,7 +14,7 @@ Some assumptions before we get started:
 	<li>Assumption 3</li>
 </ul>
 <h3>Scraping mlb.com to get stadium coordinates</h3>
-DUMMY TEXT
+<p>DUMMY TEXT</p>
 <h3>Geocode addresses</h3>
 DUMMY TEXT
 <h3>Download schedule results</h3>
