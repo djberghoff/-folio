@@ -13,9 +13,9 @@ Some assumptions before we get started:
 	<li>Assumption 2</li>
 	<li>Assumption 3</li>
 </ul>
-<h3>Scraping mlb.com to get stadium coordinates</h3>
+<h3>Using a web scraper to get stadium coordinates</h3>
 <br>
-For the sake of simplicity, I decided to use the address of each team's stadium as the start/end point for all travel. <a href="http://www.mlb.com/team/">MLB.com</a> has team by team information laid out in a nice grid. The only thing missing is a handy download link...I decided to try out web parsing using the Python package Beautiful Soup. This package allows you to parse the HTML codee of a web page and pick out the sections you need. A well-formatted web page will often have clear tags and classes that make it easier to identify specific sections.  In this case, the information for each team is placed within unordered lists. The teams are sorted by league into two classes--"al team" for American League and "nl team" for National League. I can simply use the Beautiful Soup parser to locate all instances of each class and return the information of the corresponding list elements.
+For the sake of simplicity, I decided to use the address of each team's stadium as the start/end point for all travel. <a href="http://www.mlb.com/team/">MLB.com</a> has team by team information laid out in a nice grid, the only thing missing is a handy download link. Instead, I decided to try out web parsing using the Python package Beautiful Soup. This package allows you to parse the HTML codee of a web page and pick out the sections you need. A well-formatted web page will often have clear tags and classes that make it easier to identify specific sections.  It helps to view the source code (right click--view source code) to better understand how the page is structured. In this case, the teams are sorted by league into two classes and the information for each team is placed within unordered lists. I can simply use the Beautiful Soup parser to locate all instances of each class and return the information of the corresponding list elements.
 <br>
 {% highlight python %}
 from bs4 import BeautifulSoup as bs
