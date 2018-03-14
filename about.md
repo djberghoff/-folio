@@ -16,7 +16,7 @@ Link to your social media connections, too. This theme is set up to use <a href=
 <hr/>
 <br/>
 <span class="contacticon center">
-	<a href="mailto:dberghoff2@gmail.com"><i class="fa fa-envelope-square"></i></a>
+	<a href="mailto:{site.email}"><i class="fa fa-envelope-square"></i></a>
 	<!--<a href="https://github.com" target="_blank"><i class="fa fa-github-square"></i></a>-->
 	<a href="https://www.linkedin.com/in/dannyberghoff" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 </span>
