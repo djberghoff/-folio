@@ -183,7 +183,8 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    white-space: pre-wrap;
+    //overflow-x: scroll;
 
     > code {
         border: 0;
