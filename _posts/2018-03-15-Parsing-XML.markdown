@@ -19,7 +19,7 @@ Here is a snippet of what the XML file looks like. This is how a single SMS mess
 {% endhighlight XML %}
 <br>
 Most of the metadata is fairly straightforward (e.g. "body", "readable_date", "contact_name"). A little deduction allowed me to figure out that the "type" field indicates whether the message was sent or received by my phone. Type of 1 indicates I sent the message, type 2 indicates I received the message (from "contact_name").
-<br>
+<br><br>
 The script below uses an iterator to parse every iteration of the "sms" tag. On each pass, the metadata from each message is stored as temporary variables and added to a list. The list of variables from each message is added to a master list, "mylist."
 {% highlight python %}
 mylist = []
@@ -43,3 +43,9 @@ for sms in root.iter('sms'):
 	textlist.append(text)
 	mylist.append(textlist)
 {% endhighlight %}
+<br><br>
+Printing one element from this list shows the following:
+{% highlight python %}
+['Jul 8, 2015 7:25:59 PM', 'Danny', 'Dad', 'Where are your seats?']
+{% endhighlight %}
+Storing the texts in the list in this way makes the data a bit easier to manage and highlights the information I am most interested in. The example above shows the list elements to be date, recipient, sender, and message.
