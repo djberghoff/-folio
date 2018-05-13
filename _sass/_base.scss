@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
 $base-line-height:              1.5em;
-$horizontal-spacing-unit:       0px;
+$horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
 $nav-height:                    56px;
 
@@ -209,8 +209,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit}));
-        max-width:         calc(800px - (#{$horizontal-spacing-unit}));
+        max-width: -webkit-calc(1000px - (#{$horizontal-spacing-unit}));
+        max-width:         calc(1000px - (#{$horizontal-spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
