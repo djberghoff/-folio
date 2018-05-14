@@ -31,7 +31,7 @@ color: $red;
     }
 }
 .site-nav {
-float: left;
+float: right;
 line-height: $nav-height;
 .page-link{
 line-height: $base-line-height;
@@ -44,7 +44,7 @@ margin-left: 10px;
 position: fixed;
 top: 0px;
 right: 10px;
-text-align: left;
+text-align: right;
 &:hover .trigger {
 display: inline;
 padding-bottom: 5px;
