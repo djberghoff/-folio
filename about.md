@@ -8,9 +8,9 @@ permalink: /about/
 
 <br/>
 Hi there! My name is Danny Berghoff. I am a geographer living in Annapolis, MD but I will always be a Buckeye at heart. I like using maps to discover new insights and "tell a story." I am especially interested in leveraging spatial data through web mapping tools.
-<br/>
+<br/><br/>
 I aim to use this blog to document my GIS learning experiences with an emphasis on scripting, web mapping, and open source tools.
-<br/>
+<br/><br/>
 When I am not mapping, I enjoy riding my bike, playing basketball and pickleball, and discovering new things to cook. Click <a href="https://arcg.is/1yrz8a" target="_blank">here</a> to view a story map of my GIS experience and education.
 
 <br/>
