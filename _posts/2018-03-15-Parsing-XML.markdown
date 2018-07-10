@@ -43,9 +43,11 @@ for sms in root.iter('sms'):
 	textlist.append(text)
 	mylist.append(textlist)
 {% endhighlight %}
-<br><br>
+<br>
 Printing one element from this list shows the following:
 {% highlight python %}
 ['Jul 8, 2015 7:25:59 PM', 'Danny', 'Dad', 'Where are your seats?']
 {% endhighlight %}
-Storing the texts in the list in this way makes the data a bit easier to manage and highlights the information I am most interested in. The example above shows the list elements to be date, recipient, sender, and message.
+Storing the texts in the list in this way makes the data a bit easier to manage and highlights the information I am most interested in. Perhaps not the most elegant way to process the data (I see you, Pandas), but lists make sense to me and are simple to manipulate with this amount of data.
+<br>
+My next thought was to use my master list of text conversations to analyze word frequency. I could count exactly how often I use "haha" (it's a lot) or determine which of my friends are most often subjected to my swinging moods during Bengals games. 
